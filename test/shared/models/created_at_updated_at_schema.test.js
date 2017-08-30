@@ -3,7 +3,7 @@
 import {Meteor} from 'meteor/meteor';
 import {SimpleSchema} from 'meteor/aldeed:simple-schema';
 import {createdAtUpdatedAtSchema} from
-  'meteor/fashionunited:created-at-updated-at';
+  'meteor/fuww:created-at-updated-at';
 import {Random} from 'meteor/random';
 import {
   describe,
