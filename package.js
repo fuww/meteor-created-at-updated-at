@@ -19,8 +19,11 @@ Package.onUse(function(api) {
 
   api.export([
     'createdAtSchema',
+    'createdAtUpdatedAtSchema',
+    'createdBySchema',
+    'createdByUpdatedBySchema',
     'updatedAtSchema',
-    'createdAtUpdatedAtSchema'
+    'updatedBySchema'
   ]);
 });
 
@@ -30,10 +33,12 @@ Package.onTest(function(api) {
     'meteor',
     'practicalmeteor:mocha',
     'practicalmeteor:chai',
+    'practicalmeteor:sinon',
     'random',
     'aldeed:simple-schema',
     'fuww:created-at-updated-at'
   ]);
 
-  api.mainModule('test/shared/main.js');
+  api.mainModule('test/client/main.js', 'client');
+  api.mainModule('test/server/main.js', 'server');
 });
