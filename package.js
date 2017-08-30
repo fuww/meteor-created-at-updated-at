@@ -3,7 +3,7 @@
 
 Package.describe({
   summary: 'Package for adding createdAt and updatedAt to schema',
-  version: '0.0.2',
+  version: '0.0.3',
   name: 'fuww:created-at-updated-at',
   git: 'https://github.com/fuww/meteor-created-at-updated-at.git',
   documentation: 'README.md'
