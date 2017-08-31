@@ -8,6 +8,7 @@ const updatedBySchema = new SimpleSchema({
 
       if (!userId) {
         this.unset();
+        return;
       }
 
       if (this.isModifier) {
