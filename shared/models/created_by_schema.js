@@ -3,6 +3,7 @@ import {SimpleSchema} from 'meteor/aldeed:simple-schema';
 const createdBySchema = new SimpleSchema({
   createdBy: {
     type: String,
+    optional: true,
     autoValue() {
       const {userId} = this;
 

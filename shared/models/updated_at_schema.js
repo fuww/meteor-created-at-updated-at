@@ -7,6 +7,7 @@ function getCreatedAt() {
 const updatedAtSchema = new SimpleSchema({
   updatedAt: {
     type: Date,
+    optional: true,
     autoValue() {
       if (this.isInsert) {
         return getCreatedAt.call(this) || new Date();
